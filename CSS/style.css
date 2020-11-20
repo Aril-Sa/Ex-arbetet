@@ -8,13 +8,11 @@ html{
     line-height: 1.5em;
 }
 body{
-    padding-bottom: 4em;
+    padding-bottom: 7em;
     font-weight: 600;
     color: var(--text_color);
-    /* border: 1px solid #333; */
 }
 .wrapper{
-    /* border: 1px solid #333; */
     width: 90%;
     min-height: auto;
     margin: 0 auto;
@@ -30,12 +28,10 @@ body{
     gap: 2%;  
 }
 [class*="item_"]{
-    /* border: 1px solid #333; */
     min-height: 3em;
 }
 .item_header{
-    grid-area: header; 
-         
+    grid-area: header;        
 }
 .item_main{
     grid-area: main;
@@ -52,7 +48,9 @@ body{
 .item_footer{
     grid-area: footer; 
 }
-
+#dTime{
+    font-size: x-small;
+}
 /*--- HEADINGS h1 - h6 ---*/
  h1, h2, h3, h4, h5, h6 {
     /* margin-bottom: 24px; */

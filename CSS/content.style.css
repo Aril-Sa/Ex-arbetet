@@ -38,6 +38,7 @@
     padding-top: 4%;
     box-sizing: border-box;
     background-color: var(--button_color);
+    display: block;
 }
 a:hover{
     color: var(--text_color);  
@@ -71,11 +72,18 @@ a:hover{
 .item_nav_social img {width: 3em;}
 
 /* Article section */
-.articel_wrapper {height: 15em;}
+.articel_wrapper {
+    min-height: 20em;
+    background: url(../images/businessmen.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    
 
+}
 /* Section section */
 .item_section2{
-    height: 15em;
+    height: 20em;
     overflow: scroll;
 }
 .sec_list a{
@@ -95,8 +103,26 @@ a:hover{
     padding: 2em 5em;
 }
 
+/* FORM SUBSCRIBE */
 
-
+.container{
+    border: 3px solid #333;
+    width: 69%;
+    margin: 2% auto;
+    padding: 2rem 3rem;
+}
+#display{
+    min-height: 2rem;
+}
+#display,
+.width,
+#fName,
+#lName{
+    width: 14.5rem;
+}
+.pointer{
+    font-size: x-large;
+}
 
 
 
