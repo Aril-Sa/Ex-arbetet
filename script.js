@@ -2,7 +2,9 @@
 let date = new Date();
 document.getElementById("dTime").innerHTML = date;
 
-/* function myFunction() {
+/* Subscribtion section */
+
+ function myFunction() {
     let fName = document.getElementById("fName").value;
     let email = document.getElementById("email").value;
     document.getElementById("display").innerHTML = 
