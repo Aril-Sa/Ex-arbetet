@@ -1,6 +1,6 @@
 /* Grid Layout */
 html{
-    /* background: url(./12_col.gif) center top repeat-y #fff; */
+    /* background: url(../images/12_col.gif) center top repeat-y #fff; */
     background-color: rgb(98, 150, 180, 0.1);
     margin: 0 auto;
     padding: 0 10px;
@@ -8,7 +8,7 @@ html{
     line-height: 1.5em;
 }
 body{
-    padding-bottom: 7em;
+    padding-bottom: 8em;
     font-weight: 600;
     color: var(--text_color);
 }
@@ -21,14 +21,14 @@ body{
     grid-template-areas: 
     "header header header header header header"
     "main main main main main main "
+    "art1 art1 art1 art1 sec2 sec2 "
+    "art1 art1 art1 art1 sec2 sec2 "
     "social social social social social social "
-    "art1 art1 art1 art1 sec2 sec2 "
-    "art1 art1 art1 art1 sec2 sec2 "
     "footer footer footer footer footer footer ";
     gap: 2%;  
 }
 [class*="item_"]{
-    min-height: 3em;
+    /* min-height: 3em; */
 }
 .item_header{
     grid-area: header;        
@@ -53,7 +53,6 @@ body{
 }
 /*--- HEADINGS h1 - h6 ---*/
  h1, h2, h3, h4, h5, h6 {
-    /* margin-bottom: 24px; */
     font-weight: bold;
   }
   h1 {
@@ -94,6 +93,7 @@ li{
 .item_footer,
 .flex_main,
 .articel_wrapper,
-.item_section2{
-    box-shadow: 0.4em 0.2em var(--shadow_color);
+.item_section2,
+.nav_wrapper h2{
+    box-shadow: 0.8em 0.5em var(--shadow_color);
 }
