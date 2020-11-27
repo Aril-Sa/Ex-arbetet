@@ -7,25 +7,19 @@
 .item_nav_social,
 .item_header,
 .item_footer,
-.nav_wrapper h2,
 .toggle_button{
     background-image: 
     linear-gradient(to right, rgb(128, 176, 192), 
     var(--prime_color), rgb(128, 176, 192), 
     var(--prime_color));
 }
-/* .nav_wrapper h2{
-    background-image: 
-    linear-gradient(to right, rgb(128, 176, 192, 0.5), 
-    var(--prime_color), rgb(128, 176, 192, 0.3), 
-    var(--prime_color));
-} */
 #logo{
     font-size: 2em;
     font-weight: 700;
     margin: 1em;
-    color: var(--prime_color);
+    color: var(--contrast_text_white);
 }
+/* Nav in header an buttons */
 .nav_wrapper{
     min-width: 60%;
     display: flex;
@@ -37,7 +31,10 @@
     display: flex;    
 }
 .nav_wrapper a{
+    display: flex;
     padding: .5em;
+    height: 5em;
+    align-items: center;
     color: var(--contrast_text_white);
 }
 .nav_wrapper h2{
@@ -49,14 +46,14 @@
     padding-top: 2%;
     box-sizing: border-box;
 }
-/* Buttons  */
+/* Buttons hide */
 
 .item_footer :hover{
     background-color: rgb(25, 30, 73, 0.5);
     color: var(--contrast_text_white);
     
 }
-.nav_wrapper h2,:hover{
+.nav_wrapper a:hover{
     background-color: rgb(25, 30, 73, 0.5);
     color: var(--contrast_text_white);
     
@@ -97,18 +94,30 @@
     text-align: center;
 }
 /* Social media ICON */
-.item_nav_social {direction: rtl; flex-wrap: wrap;}
+.item_nav_social {
+    direction: rtl;
+    flex-wrap: wrap;
+    text-align: center;
+}
 .item_nav_social ul {margin: 1em;}
 .item_nav_social li{padding: 0 2.5em;}
 .item_nav_social img {width: 3em;}
-#smal_logo img {width: 12em;}
 
 /* Article section */
-.articel_wrapper {
+.item_article1 {
     min-height: 20em;
     background: url(../images/businessmen.jpg) no-repeat;
     background-size: cover;
     text-align: center;
+    opacity: .8;
+}
+.item_article1 h1{
+    margin-top: 2em;
+    font-size: 55; 
+}
+.item_article1 span{
+    color: rgb(12, 12, 12);
+    font-weight: 900;
 }
 /* Section section */
 .item_section2{
@@ -118,7 +127,6 @@
 .sec_list a{
     font-weight: 600;
 }
-
 /* Footer */
 .item_footer a,
 .item_footer{
@@ -134,12 +142,6 @@
 
 /* FORM SUBSCRIBE */
 
-.container{
-    border: 3px solid #333;
-    width: 69%;
-    margin: 2% auto;
-    padding: 2rem 3rem;
-}
 #display{
     min-height: 2rem;
 }
@@ -152,10 +154,43 @@
 .pointer{
     font-size: x-large;
 }
+#showForm img{
+    width: 10em;
+}
+/* #### Sub-btn hidden #### */
+#showForm{
+    overflow: hidden;
+    display: none;
+    direction: ltr;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #333;
+    width: 69%;
+    margin: 2% auto;
+    padding: 2rem 3rem;
+    color: var(--contrast_text_white);
 
-@media screen and (max-width: 400px){
+    /* Set transition up */
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    transition: max-height 1s;
+    }
+#showForm.open{
+    height: 20m;
+    /* Set transition up */
+    display: flex;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    transition: max-height 1s;
+} 
+@media screen and (max-width: 680px){
+    
+    .article_wrapper{
+    display: flex;
+    flex-direction: column;
+}
     .toggle_button{
-        right: 3em;  
+        right: 4em;  
     }
     .toggle_button,
     .item_header,
@@ -175,9 +210,6 @@
     .flex_item_main,
     .item_footer{
         flex-direction: column;
-    }
-    .nav_wrapper{
-        align-items: flex-start;
     }
     .nav_link,
     .nav_wrapper, 
@@ -211,42 +243,30 @@
 
 /* Medium */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1020px) and (min-width: 680px){
    
-    .toggle_button,
+    /* .toggle_button, */
     .item_header,
     .item_footer{
         display: flex;
     }
-    .nav_link.active{
-        display: flex;
-    }
-    .nav_link{
-        display: none;
-    }
     .item_header,
-    .nav_wrapper,
-    .nav_link ul,
     .flex_main,
-    .flex_item_main,
     .item_footer{
         flex-direction: column;
-    }
-    .nav_wrapper{
-        align-items: flex-start;
     }
     .nav_link,
     .nav_wrapper, 
     .nav_link ul,
     .flex_main,
-    .flex_item_main,
-    .nav_wrapper h2{
+    .flex_item_main
+    {
         width: 100%;
     }
     .item_main{
         margin: 1em;
     }
-    .nav_link ul,
+    
     .flex_main,
     .flex_item_main{
         text-align: center;

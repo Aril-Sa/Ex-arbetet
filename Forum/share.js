@@ -15,17 +15,6 @@ button.onclick = function() {
     }
 };
 
-/* function myFunction1() {
-    let textArea = document.getElementById("text_area").value;
-    document.getElementById("content").innerHTML = textArea;
-    let nameSubmit = document.getElementById("name_submit").value;
-    document.getElementById("person_message").innerHTML = nameSubmit + " commented.";   
-    
-    if(nameSubmit == ""){
-        document.getElementById("person_message").innerHTML = "Anonymous comment.";
-    }
-} */
-
 function myFunction1(){
     let newText =  document.createElement("section");
     let textArea = document.getElementById("text_area").value;

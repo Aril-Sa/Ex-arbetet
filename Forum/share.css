@@ -108,9 +108,15 @@ body h1{
     transition: max-height 0.7s;
 }
 
+#content{
+    height: 3em;
+    display: none;
+}
+
 #content.open{
-    max-height: 50em;
+    height: 30em;
     /* Set transition up */
+    display: flex;
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
@@ -119,6 +125,7 @@ body h1{
 #name_submit{
     color: var(--text_color);
 }
+
 #show_more,
 #butten_submit,
 #name_submit{

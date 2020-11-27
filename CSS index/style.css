@@ -21,14 +21,11 @@ body{
     grid-template-areas: 
     "header header header header header header"
     "main main main main main main "
-    "art1 art1 art1 art1 sec2 sec2 "
-    "art1 art1 art1 art1 sec2 sec2 "
+    "art1 art1 art1 art1 art1 art1  "
+    "art1 art1 art1 art1 art1 art1  "
     "social social social social social social "
     "footer footer footer footer footer footer ";
     gap: 2%;  
-}
-[class*="item_"]{
-    /* min-height: 3em; */
 }
 .item_header{
     grid-area: header;        
@@ -46,7 +43,8 @@ body{
     grid-area: sec2;  
 }
 .item_footer{
-    grid-area: footer; 
+    grid-area: footer;
+    min-height: 7em;
 }
 #dTime{
     font-size: x-small;
@@ -93,7 +91,6 @@ li{
 .item_footer,
 .flex_main,
 .articel_wrapper,
-.item_section2,
-.nav_wrapper h2{
+.item_section2{
     box-shadow: 0.8em 0.5em var(--shadow_color);
 }
