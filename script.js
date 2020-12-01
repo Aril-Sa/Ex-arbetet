@@ -21,9 +21,9 @@ toggleButten.addEventListener("click", () => {
 let content = document.getElementById("showForm");
 let button = document.getElementById("show_more");
 let subImg= document.createElement("img");
+/* button.setAttribute("cursor", "pointer"); */
 subImg.setAttribute("src", "./images/sub.jpg");
 document.querySelector('nav #show_more').appendChild(subImg);
-console.log(subImg);
 
 button.onclick = function() {
     if(content.className == "open") {
@@ -36,4 +36,15 @@ button.onclick = function() {
     }
 };
 
+function activeFade() {
+      
+    if(this.scrollY > this.innerHeight /1.2){
+        document.body.classList.add("hideArticle");
+    }
+    console.log("working");
+
+}
+
+
+window.addEventListener("scroll", activeFade);
 

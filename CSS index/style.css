@@ -5,10 +5,12 @@ html{
     margin: 0 auto;
     padding: 0 10px;
     background-size: 90%;
-    line-height: 1.5em;
 }
 body{
-    padding-bottom: 8em;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-bottom: 6em;
     font-weight: 600;
     color: var(--text_color);
 }
@@ -20,12 +22,13 @@ body{
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
     "header header header header header header"
+    "art1 art1 art1 art1 art1 art1  "
+    "art1 art1 art1 art1 art1 art1  "
     "main main main main main main "
-    "art1 art1 art1 art1 art1 art1  "
-    "art1 art1 art1 art1 art1 art1  "
     "social social social social social social "
     "footer footer footer footer footer footer ";
-    gap: 2%;  
+    gap: 2%;
+    row-gap: 1%;  
 }
 .item_header{
     grid-area: header;        
@@ -64,10 +67,10 @@ body{
  
   /* :root and standar set */
 :root{
-    --prime_color: rgb(25, 30, 73);
+    --prime_color: rgb(129, 131, 146);
     --contrast_text_blue: rgb(12, 12, 65);
     --contrast_text_white: white;
-    --text_color: rgb(25, 63, 25);
+    --text_color: rgb(18, 37, 18);
     --shadow_color:rgba(143, 136, 136, 0.3);
     --button_color: rgb(98, 150, 180);
   }
@@ -89,8 +92,9 @@ li{
 .item_nav_social,
 .item_header,
 .item_footer,
-.flex_main,
+.flex_item_main,
 .articel_wrapper,
+.item_article1,
 .item_section2{
     box-shadow: 0.8em 0.5em var(--shadow_color);
 }
