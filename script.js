@@ -41,10 +41,10 @@ function activeFade() {
     if(this.scrollY > this.innerHeight /1.2){
         document.body.classList.add("hideArticle");
     }
-    console.log("working");
-
 }
 
-
 window.addEventListener("scroll", activeFade);
+
+
+
 
