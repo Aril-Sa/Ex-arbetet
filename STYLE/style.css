@@ -1,0 +1,101 @@
+/* Grid Layout */
+html{
+    /* background: url(../images/12_col.gif) center top repeat-y #fff; */
+    background-color: rgb(98, 150, 180, 0.1);
+    margin: 0 auto;
+    padding: 0 10px;
+    background-size: 90%;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-bottom: 6em;
+    font-weight: 600;
+    color: var(--text_color);
+}
+.wrapper{
+    width: 90%;
+    min-height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    "art1 art1 art1 art1 art1 art1  "
+    "art1 art1 art1 art1 art1 art1  "
+    "main main main main main main "
+    "social social social social social social "
+    "footer footer footer footer footer footer ";
+    gap: 2%;
+    row-gap: 1%;  
+}
+.item_header{
+    grid-area: header;        
+}
+.item_main{
+    grid-area: main;
+}
+.item_nav_social{
+    grid-area: social;
+}
+.item_article1{
+    grid-area: art1;   
+}
+.item_section2{
+    grid-area: sec2;  
+}
+.item_footer{
+    grid-area: footer;
+    min-height: 7em;
+}
+#dTime{
+    font-size: x-small;
+}
+/*--- HEADINGS h1 - h6 ---*/
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 1.5em; /* 24px --> 24 ÷ 16 = 1.5 */
+    line-height: 1em; /* 24px --> 24 ÷ 24 = 1 */
+  }
+  h2 {
+    font-size: 1.375em; /* 22px --> 22 ÷ 16 = 1.375 */
+    line-height: 1.0909em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
+ } 
+ 
+  /* :root and standar set */
+:root{
+    --prime_color: rgb(129, 131, 146);
+    --contrast_text_blue: rgb(12, 12, 65);
+    --contrast_text_white: white;
+    --text_color: rgb(18, 37, 18);
+    --shadow_color:rgba(143, 136, 136, 0.3);
+    --button_color: rgb(98, 150, 180);
+  }
+::selection{
+    color: var(--contrast_text_white);
+    background-color: var(--contrast_text_blue);
+  }
+/* All a and li decorations */
+a{
+    text-decoration: none;
+}
+li{
+   display: inline;
+   text-decoration: none;
+   text-align: center;
+}
+
+/* All borders */
+.button_nav,
+.item_nav_social,
+.item_header,
+.item_footer,
+.flex_item_main,
+.articel_wrapper,
+.item_article1,
+.item_section2{
+    box-shadow: 0.8em 0.5em var(--shadow_color);
+}
