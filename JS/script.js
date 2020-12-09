@@ -7,7 +7,9 @@ document.getElementById("dTime").innerHTML = date;
  function myFunction() {
     let fName = document.getElementById("fName").value;
     let email = document.getElementById("email").value;
-    document.getElementById("display").innerHTML = 
+    let display = document.getElementById("display");
+    
+    display.innerHTML = 
     fName  + " your email " + email +  " has been addet to the subscription list!"; 
 }
 // Navbar
@@ -21,13 +23,14 @@ toggleButten.addEventListener("click", () => {
 let content = document.getElementById("showForm");
 let button = document.getElementById("show_more");
 let subImg= document.createElement("img");
-subImg.setAttribute("src", "../IMAGES/sub.jpg");
+subImg.setAttribute("src", "./IMAGES/sub.jpg");
 document.querySelector('nav #show_more').appendChild(subImg);
 
 button.onclick = function() {
     if(content.className == "open") {
         /* Shrink box */
         content.className = subImg;
+        subImg.style.cursor = "pointer";
         
     } else {
         /* Expand box */
@@ -38,22 +41,46 @@ button.onclick = function() {
 function activeFade() {
       
     if(this.scrollY > this.innerHeight /1.2){
-        document.body.classList.add("hideArticle");
-    }
+        document.body.classList.add("backGr");
+    } 
 }
 
 window.addEventListener("scroll", activeFade);
 
+
+
+
+
+
+
 /* Fade artikle */
-let text = document.querySelector(".text");
+/* let text = document.querySelector(".item_article1 h1 span");
 let textCon = text.textContent;
-textCon = textCon.split("");
+textCon = textCon.split(""); */
 
-/* for(let i; i < textCon.length; i++){
-    text.innerHTML += "<span>" + textCon[i] + "</span>";
-
+/* text.textContent = ""; */
+/* 
+for(let i = 0; i < textCon.length; i++){
+    text.innerHTML = "<span>" + textCon[i] + "</span>";
 } */
+/* 
+let char = 0;
+let time = setInterval(onClock, 50);
 
-console.log(text);
+function onClock(){
+    let span = text.querySelectorAll("span")[char];
+    span.classList.add("fade");
+    char++; 
+    if(char === content.length){
+        stop();
+        return;
+    }
+}
+function stop(){
+    clearInterval(time);
+    char = null;
+}
+console.log(textCon); 
+ */
 
 

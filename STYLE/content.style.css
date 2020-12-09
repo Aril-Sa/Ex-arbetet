@@ -4,6 +4,7 @@
     justify-content: start;
     display: flex;
 }
+.butt,
 .item_nav_social,
 .item_header,
 .item_footer,
@@ -135,6 +136,9 @@
     color: var(--contrast_text_white);
 }
 .item_nav_social img {width: 1.5em;}
+.butt{
+    cursor: pointer;
+}
 
 /* Article section */
 .item_article1 {
@@ -146,9 +150,8 @@
     opacity: .9;
 }
 /* background scroll */
-.hideArticle{
-    background-color: rgb(201, 207, 207);
-    
+.backGr{
+    background-color: rgba(65, 86, 104, 0.2);
 }
 .item_article1 h1{
     margin-top: 2em;
@@ -157,7 +160,12 @@
 .item_article1 span{
     color: rgb(12, 12, 12);
     font-weight: 900;
+    
 }
+.swap{
+    opacity: 1;
+}
+
 
 /* Footer */
 .item_footer a,
@@ -180,6 +188,7 @@
 }
 #display,
 .butt,
+#email,
 #fName,
 #lName{
     width: 14.5rem;
