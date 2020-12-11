@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/black/OneDrive%20-%20Stockholm%20Kommun/Frondend%20Development/HEMSIDAN/Ex-arbetet/FORM/form.html?firstName=FirstName+required&lastName=&Age=",
+            "url": "file:///C:/Users/black/OneDrive%20-%20Stockholm%20Kommun/Frondend%20Development/HEMSIDAN/Ex-arbetet/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

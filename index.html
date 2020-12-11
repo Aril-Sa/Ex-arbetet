@@ -2,9 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> prizeOptimiZe </title>
+        <title> p-OptimiZe </title>
         <link rel="shortcut icon" href="./IMAGES/prize3.png"/>
-        <!-- <link rel="" href="./images/big_logo1.png"> -->
         <link rel="stylesheet" href="./STYLE/reset.css">
         <link rel="stylesheet" href="./STYLE/content.style.css">
         <link rel="stylesheet" href="./STYLE/style.css">
@@ -14,7 +13,8 @@
     <body>
         <div class="wrapper" >
             <header class="item_header"> 
-                <div id="logo">priZe optimiZe</div>
+                <h1 id="logo">priZe optimiZe</h1>
+               <!--  <h1 class="type"></h1> -->
                 <nav class="nav_wrapper">
 
                     <button class="toggle_button"> <i class='fas'>&#xf037;</i></button>
@@ -32,7 +32,8 @@
             <article class="item_article1">
                 <div class="pic">
                     <img src="./IMAGES/businessmen.jpg" alt="">
-                    <h1>Success is within <span>OUR</span> methods!</h1> 
+                    <h1 >Success is within <span>OUR</span> methods!</h1><br>
+                    <h1 class="type"></h1> 
                 </div>
             </article>
 
@@ -76,12 +77,9 @@
                     <h1>Free Audit</h1> <br>
                     <p>
                         &#10004;Gives you a full current status report. <br>
-                        &#10004;OTA Dominance for your facility versus <br> your competitors. <br>
+                        &#10004;OTA Dominance for your facility versus <br> your competitors. <br> <br>
                         &#10004;Pricing strategies against your competitors. <br>
                         &#10004;Action list in priority order.
-                    <div class="button_nav">
-                        <a href="file:///C:/Users/black/OneDrive%20-%20Stockholm%20Kommun/Frondend%20Development/HEMSIDAN/Ex-arbetet/form.html" class="myP"> <h2>Get the report</h2></a>
-                    </div>
                 </div>
                 </div>
             </main>
@@ -102,13 +100,13 @@
 
                         <div id="showForm">
                             <h1> WE LOVE TO SHARE NEWS!</h1> <br>
-                            <form action="*/*">
+                            <form id="form">
                                 <label for="fname">Name</label> <br>
-                                <input type="text" id="fName" placeholder="Full name" required> <br>
+                                <input type="text" id="fName" placeholder="Full name" > <br>
 
                                 <label for="email" class="width">Email</label> <br>
-                                <input type="text" class="width" id="email" placeholder="email@address.com" required> <br> <br>
-                                <button type="submit" onclick="myFunction()" class="butt" required> Subscribe</button> <hr>
+                                <input type="text" class="width" id="email" placeholder="email@address.com" > <br> <hr>
+                                <button type="submit" class="butt" > Subscribe</button> 
                                 <p id="display">
                                     "Subscribe Now" <span class="pointer2">&#9756;</span> 
                                 </p> <br>
@@ -130,7 +128,7 @@
                     <ul>
                         <li><a href="#" target="blank"> Contacts </a></li> <br>
                         <li><a href="#" target="blank"> Work with us </a></li> <br>
-                        <li><a href="#" target="blank"> Applications </a></li> <br>
+                        <li><a href="file:///C:/Users/black/OneDrive%20-%20Stockholm%20Kommun/Frondend%20Development/HEMSIDAN/Ex-arbetet/form.html" target="blank"> Applications </a></li> <br>
                         <li><a href="#" target="blank"> Collaboration </a></li> <hr>
                     </ul>
                 </div>

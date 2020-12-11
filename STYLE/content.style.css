@@ -1,8 +1,9 @@
  /* Flexbox content */
 
 .item_header {
-    justify-content: start;
     display: flex;
+    justify-content: start;
+    align-items: center;
 }
 .butt,
 .item_nav_social,
@@ -146,6 +147,10 @@
 }
 
 /* Article section */
+/* background scroll */
+.backGr{
+    background-color: rgba(65, 86, 104, 0.2);
+}
 .pic img{
     width: 100%;
     opacity: .9;
@@ -153,13 +158,9 @@
 .item_article1 {
     position: relative;
 }
-/* background scroll */
-.backGr{
-    background-color: rgba(65, 86, 104, 0.2);
-}
 .item_article1 h1{
     position: absolute;
-    top: 5%;
+    top: 12%;
     left: 10%;
     margin-top: 2em;
     font-size: 55; 
@@ -168,10 +169,29 @@
     color: rgb(15, 14, 14);
     font-weight: 900;
 }
-.swap{
-    opacity: 1;
+.type{
+    position: relative;
+    padding-top: 2em;
+    margin-left: 10em;
+    color: rgb(15, 14, 14);
+    font-weight: 900;
 }
-
+.type::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 25%;
+    border: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /* Footer */
 .item_footer a,
 .item_footer{
@@ -237,6 +257,12 @@
     transition: max-height 1s;
 } 
 @media screen and (max-width: 680px){
+    .type{
+        position: relative;
+        padding-top: 2em;
+        margin-left: 7em;
+        font-weight: 900;
+    }
     .article_wrapper{
     display: flex;
     flex-direction: column;
