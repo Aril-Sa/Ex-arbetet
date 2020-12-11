@@ -10,7 +10,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.5em;
     font-size: 16px;
-    padding-bottom: 6em;
+    padding-bottom: 3em;
     font-weight: 600;
     color: var(--text_color);
 }
@@ -28,7 +28,7 @@ body{
     "social social social social social social "
     "footer footer footer footer footer footer ";
     gap: 2%;
-    row-gap: 1%;  
+    row-gap: .3%;  
 }
 .item_header{
     grid-area: header;        
@@ -89,6 +89,7 @@ li{
 }
 
 /* All borders */
+.pic,
 .butt,
 .button_nav,
 .item_nav_social,
@@ -96,7 +97,6 @@ li{
 .item_footer,
 .flex_item_main,
 .articel_wrapper,
-.item_article1,
 .item_section2{
     box-shadow: 0.8em 0.5em var(--shadow_color);
 }

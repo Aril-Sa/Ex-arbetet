@@ -10,7 +10,7 @@ document.getElementById("dTime").innerHTML = date;
     let display = document.getElementById("display");
     
     display.innerHTML = 
-    fName  + " your email " + email +  " has been addet to the subscription list!"; 
+    fName  + " your email " + email +  " has been addet to the subscription list!"
 }
 // Navbar
 const toggleButten = document.getElementsByClassName("toggle_button")[0]
@@ -24,13 +24,13 @@ let content = document.getElementById("showForm");
 let button = document.getElementById("show_more");
 let subImg= document.createElement("img");
 subImg.setAttribute("src", "./IMAGES/sub.jpg");
+subImg.style.cursor = "pointer";
 document.querySelector('nav #show_more').appendChild(subImg);
 
 button.onclick = function() {
     if(content.className == "open") {
         /* Shrink box */
         content.className = subImg;
-        subImg.style.cursor = "pointer";
         
     } else {
         /* Expand box */
@@ -46,41 +46,3 @@ function activeFade() {
 }
 
 window.addEventListener("scroll", activeFade);
-
-
-
-
-
-
-
-/* Fade artikle */
-/* let text = document.querySelector(".item_article1 h1 span");
-let textCon = text.textContent;
-textCon = textCon.split(""); */
-
-/* text.textContent = ""; */
-/* 
-for(let i = 0; i < textCon.length; i++){
-    text.innerHTML = "<span>" + textCon[i] + "</span>";
-} */
-/* 
-let char = 0;
-let time = setInterval(onClock, 50);
-
-function onClock(){
-    let span = text.querySelectorAll("span")[char];
-    span.classList.add("fade");
-    char++; 
-    if(char === content.length){
-        stop();
-        return;
-    }
-}
-function stop(){
-    clearInterval(time);
-    char = null;
-}
-console.log(textCon); 
- */
-
-

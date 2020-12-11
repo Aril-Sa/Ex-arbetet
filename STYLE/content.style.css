@@ -21,6 +21,11 @@
     color: var(--contrast_text_white);
 }
 /* Nav in header an buttons */
+.fas{
+    padding: .1em;
+    font-size: 26px;
+    opacity: 0.6;
+}
 .nav_wrapper{
     min-width: 60%;
     display: flex;
@@ -141,31 +146,31 @@
 }
 
 /* Article section */
-.item_article1 {
-    min-height: 35em;
-    background: url(../images/businessmen.jpg) no-repeat;
-    background-size: cover;
-    /* object-fit: cover; */
-    text-align: center;
+.pic img{
+    width: 100%;
     opacity: .9;
+}
+.item_article1 {
+    position: relative;
 }
 /* background scroll */
 .backGr{
     background-color: rgba(65, 86, 104, 0.2);
 }
 .item_article1 h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
     margin-top: 2em;
     font-size: 55; 
 }
 .item_article1 span{
-    color: rgb(12, 12, 12);
+    color: rgb(15, 14, 14);
     font-weight: 900;
-    
 }
 .swap{
     opacity: 1;
 }
-
 
 /* Footer */
 .item_footer a,
@@ -232,11 +237,17 @@
     transition: max-height 1s;
 } 
 @media screen and (max-width: 680px){
-    
     .article_wrapper{
     display: flex;
     flex-direction: column;
-}
+    } 
+    .item_article1 h1{
+        position: absolute;
+        top: 3%;
+        left: 10%;
+        margin-top: 2em;
+        font-size: 20; 
+    }  
     .toggle_button{
         right: 4em;  
     }
@@ -320,6 +331,13 @@
     .flex_item_main
     {
         width: 100%;
+    }
+    .item_article1 h1{
+        position: absolute;
+        top: 3%;
+        left: 10%;
+        margin-top: 2em;
+        font-size: 30; 
     }
     .item_main{
         margin: 1em;

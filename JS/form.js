@@ -32,8 +32,3 @@ form.addEventListener("submit", (e) => {
     }
 });
 
-/* let submit = document.getElementsByClassName("submit")
-submit.addEventListener("click", () => {
-    button.classList.add("active")
-}) */
-

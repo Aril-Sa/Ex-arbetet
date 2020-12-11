@@ -21,18 +21,19 @@
 
                     <div class="nav_link">
                     <ul>
-                        <link  class="button_nav"><a href=""><h2>About Us</h2></a> <link>
-                        <link class="button_nav" target="_blank"><a href=""><h2>Forum</h2></a></link>
-                        <link class="button_nav" target="_blank"><a href="file:///C:/Users/black/OneDrive%20-%20Stockholm%20Kommun/Frondend%20Development/HEMSIDAN/Ex-arbetet/HTML/news.html"><h2>News</h2></a></link>
-                        <link class="button_nav"><a href=""><h2>Home</h2></a></a></link>
+                        <link  class="button_nav"><a href="#"><h2>About Us</h2></a> <link>
+                        <link class="button_nav" target="_blank"><a href="#"><h2>Forum</h2></a></link>
+                        <link class="button_nav" target="_blank"><a href="#"><h2>News</h2></a></link>
+                        <link class="button_nav"><a href="#"><h2>Home</h2></a></a></link>
                     </ul>
                     </div>
                 </nav>
             </header>
             <article class="item_article1">
-
-                <h1>Success is within <span>OUR</span> methods!</h1> 
-
+                <div class="pic">
+                    <img src="./IMAGES/businessmen.jpg" alt="">
+                    <h1>Success is within <span>OUR</span> methods!</h1> 
+                </div>
             </article>
 
             <main class="item_main"> 
@@ -103,15 +104,15 @@
                             <h1> WE LOVE TO SHARE NEWS!</h1> <br>
                             <form action="*/*">
                                 <label for="fname">Name</label> <br>
-                                <input type="text" id="fName" placeholder="Full name"> <br>
+                                <input type="text" id="fName" placeholder="Full name" required> <br>
 
                                 <label for="email" class="width">Email</label> <br>
                                 <input type="text" class="width" id="email" placeholder="email@address.com" required> <br> <br>
-                            </form>
-                                <button type="submit" onclick="myFunction()" class="butt"> Subscribe</button> <hr>
+                                <button type="submit" onclick="myFunction()" class="butt" required> Subscribe</button> <hr>
                                 <p id="display">
                                     "Subscribe Now" <span class="pointer2">&#9756;</span> 
                                 </p> <br>
+                            </form>
                                 <img src="./IMAGES/big_logo1.png" alt="Prize Optimaze">
                         </div> 
                 </ul>
