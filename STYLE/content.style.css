@@ -5,6 +5,9 @@
     justify-content: start;
     align-items: center;
 }
+.nav_link ul li a.active{
+    background: #5e5457;
+}
 .butt,
 .item_nav_social,
 .item_header,

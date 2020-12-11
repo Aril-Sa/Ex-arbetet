@@ -12,24 +12,23 @@
     </head>
     <body>
         <div class="wrapper" >
-            <header class="item_header"> 
+            <header class="item_header" id="home"> 
                 <h1 id="logo">priZe optimiZe</h1>
-               <!--  <h1 class="type"></h1> -->
                 <nav class="nav_wrapper">
 
                     <button class="toggle_button"> <i class='fas'>&#xf037;</i></button>
 
                     <div class="nav_link">
                     <ul>
-                        <link  class="button_nav"><a href="#"><h2>About Us</h2></a> <link>
-                        <link class="button_nav" target="_blank"><a href="#"><h2>Forum</h2></a></link>
-                        <link class="button_nav" target="_blank"><a href="#"><h2>News</h2></a></link>
-                        <link class="button_nav"><a href="#"><h2>Home</h2></a></a></link>
+                        <link  class="button_nav" ><a href="#main"><h2>About Us</h2></a> <link>
+                        <link class="button_nav" target="_blank"><a href="#forum"><h2>Forum</h2></a></link>
+                        <link class="button_nav" target="_blank"><a href="#news"><h2>News</h2></a></link>
+                        <link class="button_nav" class="active"><a href="#home"><h2>Home</h2></a></a></link>
                     </ul>
                     </div>
                 </nav>
             </header>
-            <article class="item_article1">
+            <article class="item_article1" id="forum">
                 <div class="pic">
                     <img src="./IMAGES/businessmen.jpg" alt="">
                     <h1 >Success is within <span>OUR</span> methods!</h1><br>
@@ -37,7 +36,7 @@
                 </div>
             </article>
 
-            <main class="item_main"> 
+            <main class="item_main" id="main"> 
                 <div class="move">
                 <div class="flex_item_main">
                     <h1>Price </h1> <br>
@@ -85,7 +84,7 @@
             </main>
 
             <nav class="item_nav_social" >
-                <ul >
+                <ul id="news" >
                     <li><a href="https://www.facebook.com" target="blank">
                         <img src="./IMAGES/fb.png" alt="facebook"> </a></li>
                     <li><a href="https://twitter.com" target="blank">
